@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   	= "http://www.w3.org/ns/widgets"
+		xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id = "com.tstc.tipio"
+		versionCode = "1"
+		version     = "1.0.0">
+
+	<gap:platform name="android" />
+
+	<name>Tip.io</name>
+
+	<description>
+		Calculate tips on the fly with tip.io
+	</description>
+
+	<author>
+		ITSE-2357
+	</author>
+
+	<icon src="img/icon-512.png" gap:platform="android" />
+
+	<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+	<plugin name="cordova-plugin-whitelist" version="1"/>
+
+	<preference name="phonegap-version" value="cli-6.3.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="permissions" value="none" />
+	<preference name="exit-on-suspend" value="false" />
+	<preference name="stay-in-webview" value="false" />
+</widget>

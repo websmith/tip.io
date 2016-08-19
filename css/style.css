@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+* {
+    font-family: 'Oxygen', sans-serif !important;
+    text-shadow: none !important;
+    color: white;
+}
+
+.logo,
+.copyright,
+label,
+.resultTitle {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 15px auto 10px auto;
+    width: 15%;
+    font-style: italic;
+}
+
+#resultDisplay {
+    text-align: center;
+    font-style: initial;
+    font-weight: bold;
+    font-size: 30pt;
+    color: #2DD7D6;
+}
+
+.container {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10px;
+}
+
+input {
+    background-color: #222 !important;
+    color: white !important;
+    padding: 13px !important;
+}
+
+.btn-perc-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-perc {
+    width: 19.25% !important;
+}
+
+.btn-perc-active {
+    background-color: #004240 !important;
+}
+
+.btn-perc-active:hover {
+    background-color: #103129 !important;
+    color: white !important;
+    border-color: #103129 !important;
+}
+
+@media screen and (max-width: 470px) {
+    .btn-perc-container {
+        display: unset;
+    }
+    .btn-perc {
+        width: 75px !important;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.btn-other {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+}
+
+.otherTxt {
+    margin-left: -6px;
+    text-transform: uppercase;
+}
+
+#fixedTips {
+    text-align: center;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnFourth {
+    display: inline-block !important;
+    width: 49.25% !important;
+}
+
+.btn-success {
+    padding: 25px;
+    background-color: #2DD76B !important;
+}
+
+.ui-corner-all,
+.ui-btn {
+    border-radius: 3px !important;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Tip.io | Your Easy-to-use Tip Calculator</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="css/Tip.io.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+	<img class="logo" src="img/tip-io_logo-light.png" alt="Tip.io">
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div class="results">
+                <h2 class="resultTitle"><span id="resultType">Amount Tipped<!--The type of result, either total amount or percentage info text is displayed here--></span></h2>
+                <p id="resultDisplay">$0.00
+                    <!--The final result is inserted here-->
+                </p>
+            </div>
+            <div id="calcContainer">
+                <div id="percentCalc">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="Bill_Total">Bill Total</label>
+                            <input name="Bill_Total" id="billTotal_p" type="text" class="form-control" placeholder="Enter your bill amount here">
+                            <div id="fixedTips">
+                                <label for="Tip_Amount">How Generous?</label>
+                                <div class="btn-perc-container">
+                                    <button type="button" class="ui-btn btn-perc" id="percBtn-1">10%</button>
+                                    <button type="button" class="ui-btn btn-perc" id="percBtn-2">15%</button>
+                                    <button type="button" class="ui-btn btn-perc" id="percBtn-3">20%</button>
+                                    <button type="button" class="ui-btn btn-perc" id="percBtn-4">30%</button>
+                                    <button type="button" class="ui-btn btn-perc custPerc btn-other"><span class="otherTxt">Other</span></button>
+                                </div>
+                            </div>
+                            <div id="customTips">
+                                <label for="Tip_Percent">How Generous?</label>
+                                <div class="inline">
+                                    <input name="Tip_Percent" id="tipPercent_p_custom" type="text" class="form-control" placeholder="Custom percentage">
+                                    <button type="button" class="btnFourth custPerc ui-btn ui-icon-arrow-l ui-btn-icon-left">BACK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="reverseCalc">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="Bill_Total">Bill Total</label>
+                            <input name="Bill_Total" id="billTotal_r" type="text" class="form-control" placeholder="Enter your bill amount here">
+                            <label for="Tip_Amount">How Generous?</label>
+                            <input name="Tip_Amount" id="tipTotal_r" type="text" class="form-control" placeholder="Enter the amount you wish to tip">
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-choice-container">
+                    <button type="button" class="ui-btn ui-icon-carat-r ui-btn-icon-left btn-choice" id="formDisplayType">
+                    </button>
+                </div>
+                <button type="submit" class="ui-btn ui-icon-check ui-btn-icon-left btn-success" id="calc">Calculate Tip</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <hr>
+            <p class="copyright">Copyright 2016: Tip.io, All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
